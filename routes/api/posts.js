@@ -33,8 +33,6 @@ router.post('/', auth, [
         console.error(err.message);
         res.status(500).send('Server Error');
     }
-
-    
 });
 
 // @route GET api/posts
@@ -183,9 +181,7 @@ router.post('/comment/:id', [ auth, [
     } catch (err) {
         console.error(err.message);
         res.status(500).send('Server Error');
-    }
-
-    
+    }  
 });
 
 // @route DELETE api/posts/comment/:id/:comment_id
