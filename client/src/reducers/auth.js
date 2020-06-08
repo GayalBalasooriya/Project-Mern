@@ -3,7 +3,7 @@ import {
     REGISTER_FAIL,
     USER_LOADED,
     AUTH_ERROR
-} from '../actions/types';
+} from '../actions/types'; //comment
 
 const initialState = {
     token: localStorage.getItem('token'),
