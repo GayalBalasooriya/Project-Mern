@@ -6,6 +6,7 @@ import {
     PROFILE_ERROR
 } from './types';
 
+//Comment
 //Get current user profile
 export const getCurrentProfile = () => async dispatch => {
     try {
