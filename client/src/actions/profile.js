@@ -7,6 +7,7 @@ import {
 } from './types';
 
 //Comment
+//comment
 //Get current user profile
 export const getCurrentProfile = () => async dispatch => {
     try {
