@@ -39,11 +39,11 @@ const EditProfile = ({
             skills : loading || !profile.skills ? '' : profile.skills.join(','),
             githubusername : loading || !profile.githubusername ? '' : profile.githubusername,
             bio : loading || !profile.bio ? '' : profile.bio,
-            twitter : loading || !profile.twitter ? '' : profile.twitter,
-            facebook : loading || !profile.facebook ? '' : profile.facebook,
-            linkedin : loading || !profile.linkedin ? '' : profile.linkedin,
-            youtube : loading || !profile.youtube ? '' : profile.youtube,
-            instagram : loading || !profile.instagram ? '' : profile.instagram,
+            twitter : loading || !profile.social ? '' : profile.social.twitter,
+            facebook : loading || !profile.social ? '' : profile.social.facebook,
+            linkedin : loading || !profile.social ? '' : profile.social.linkedin,
+            youtube : loading || !profile.social? '' : profile.social.youtube,
+            instagram : loading || !profile.social ? '' : profile.social.instagram,
         })
     }, [loading])
 
@@ -178,8 +178,13 @@ const EditProfile = ({
 
                     <div className="form-group social-input">
                         <i className="fab fa-instagram fa-2x"></i>
-                        <input type="text" placeholder="Instagram URL" name="instagram" value={instagram}
-                    onChange={e => onChange(e)}/>
+                        <input 
+                            type="text" 
+                            placeholder="Instagram URL" 
+                            name="instagram" 
+                            value={instagram}
+                            onChange={e => onChange(e)}
+                        />
                     </div>
                 </Fragment>}
 
